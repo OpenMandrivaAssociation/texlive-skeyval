@@ -45,6 +45,7 @@ including new key types, and key management methods.
 %doc %{_texmfdistdir}/doc/latex/skeyval/README
 %doc %{_texmfdistdir}/doc/latex/skeyval/skeyval-guide.pdf
 %doc %{_texmfdistdir}/doc/latex/skeyval/skeyval-guide.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +56,5 @@ including new key types, and key management methods.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
