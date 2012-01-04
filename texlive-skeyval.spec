@@ -6,7 +6,7 @@
 # catalog-version 0.72
 Name:		texlive-skeyval
 Version:	0.72
-Release:	1
+Release:	2
 Summary:	Extensions to xkeyval
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/skeyval
