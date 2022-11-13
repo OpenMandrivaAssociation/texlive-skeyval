@@ -1,18 +1,12 @@
-# revision 30560
-# category Package
-# catalog-ctan /macros/latex/contrib/skeyval
-# catalog-date 2013-05-16 17:14:56 +0200
-# catalog-license lppl1.3
-# catalog-version 1.3
 Name:		texlive-skeyval
-Version:	1.3
-Release:	10
+Version:	30560
+Release:	1
 Summary:	Key-value parsing combining features of xkeyval and pgfkeys
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/skeyval
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skeyval.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skeyval.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skeyval.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skeyval.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ changing key callbacks and values on the fly, and other
 features of pgfkeys are introduced in a new context.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -57,7 +51,7 @@ features of pgfkeys are introduced in a new context.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
