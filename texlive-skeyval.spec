@@ -1,6 +1,6 @@
 Name:		texlive-skeyval
 Version:	30560
-Release:	1
+Release:	2
 Summary:	Key-value parsing combining features of xkeyval and pgfkeys
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/skeyval
