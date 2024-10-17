@@ -3,7 +3,7 @@ Version:	30560
 Release:	2
 Summary:	Key-value parsing combining features of xkeyval and pgfkeys
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/skeyval
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/skeyval
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skeyval.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skeyval.doc.r%{version}.tar.xz
